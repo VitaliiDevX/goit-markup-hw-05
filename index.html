@@ -383,7 +383,79 @@
             </li>
           </ul>
         </div>
+        <form class="subscribe-form">
+          <p class="social-link-title">Subscribe</p>
+          <div class="subscribe-wrapper">
+            <input class="footer-input" type="email" name="subscribe-email" placeholder="E-mail" required />
+            <button class="subscribe-btn" type="submit">
+              Subscribe
+              <svg width="24" height="20">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
+
+    <!-- Backdrop -->
+     <div class="backdrop is-open">
+      <div class="modal">
+        <button class="modal-close-btn" type="button">
+          <svg class="modal-close-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="review-form-slogan">Leave your contacts and we will call you back</p>
+        <form class="review-form">
+          <div class="review-form-field-wrapper">
+            <label class="review-form-field-label" for="username">Name</label>
+            <div class="review-form-input-wrapper">
+              <input class="review-form-input" type="text" id="username" name="username" required />
+              <svg class="review-form-field-icon" width="12" height="12">
+                <use href="./images/icons.svg#icon-avatar"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="review-form-field-wrapper">
+            <label class="review-form-field-label" for="user-tel">Phone</label>
+            <div class="review-form-input-wrapper">
+              <input class="review-form-input" type="tel" id="user-tel" name="user-tel"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx" />
+              <svg class="review-form-field-icon" width="13" height="13">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="review-form-field-wrapper">
+            <label class="review-form-field-label" for="user-email">Email</label>
+            <div class="review-form-input-wrapper">
+              <input class="review-form-input" type="email" id="user-email" name="user-email" />
+              <svg class="review-form-field-icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="review-form-field-wrapper">
+            <label class="review-form-field-label" for="user-comment">Comment</label>
+            <textarea class="review-form-message" name="user-comment" id="user-comment" placeholder="Text input"
+              required></textarea>
+          </div>
+          <div class="review-form-checkbox-wrapper">
+            <input class="review-form-policy-checkbox visually-hidden" type="checkbox" name="policy" value="true" id="policy"
+              required />
+            <label class="review-form-policy-label" for="policy">
+              <span class="review-form-policy-custom-checkbox">
+                <svg class="review-form-custom-checkbox-icon" width="10" height="10">
+                  <use href="./images/icons.svg#icon-checkmark"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the <a class="privacy-policy-link" href="">Privacy Policy</a>
+            </label>
+          </div>
+          <button class="review-form-submit-btn" type="submit">Send</button>
+        </form>
+      </div>
+     </div>
   </body>
 </html>
