@@ -120,11 +120,7 @@ img {
 .nav-item:hover,
 .nav-item:focus,
 .contact-link:hover,
-.contact-link:focus,
-.review-form-submit-btn:hover,
-.review-form-submit-btn:focus,
-.subscribe-btn:hover,
-.subscribe-btn:focus {
+.contact-link:focus {
   color: #404bbf;
   outline: none;
 }
@@ -196,7 +192,11 @@ img {
 }
 
 .hero-btn:hover,
-.hero-btn:focus {
+.hero-btn:focus,
+.review-form-submit-btn:hover,
+.review-form-submit-btn:focus,
+.subscribe-btn:hover,
+.subscribe-btn:focus {
   background-color: #404bbf;
   outline: none;
 }
