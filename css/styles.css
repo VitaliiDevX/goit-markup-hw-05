@@ -673,6 +673,8 @@ img {
 }
 
 .review-form-submit-btn {
+  display: block;
+  margin: 0 auto;
   min-width: 169px;
   font-weight: 500;
   line-height: 150%;
